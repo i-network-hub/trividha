@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <title>Trividha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="assets/owl/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl/owlcarousel/assets/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" href="assets/fullpage.js/fullpage.css">
+	<link rel="stylesheet" href="assets/css/nav-style.css">
+ 
+  <link rel="stylesheet" href="assets/css/main-style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+
+   <style>
+   .affix {
+     top: 0;
+     width: 100%;
+     z-index: 9999 !important;
+   }
+ 
+   .affix + .container-fluid {
+     padding-top: 70px;
+   }
+   #fp-nav{
+       display: none;
+   }
+   
+   
+   </style>
+ </head>
+ <body>
+     <div class="wrapper">
+       
+
+<section>
+    <div id="flipkart-navbar" class=" top-fix">
+
+        <div class="container-fluid" >
+            
+            <div class="container" >
+            
+                <div class="row row2">
+                    <div class="col-sm-4">
+                        <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ 
+                            <a href="index.html"><img src="images/Logo.png" class="img-responsive ig" style="margin:auto; display:block;"/> </a></span>
+                        <div class="col-md-2 col-sm-5 col-xs-5 nopadding">
+                            <img src="images/img1.png" class="img-responsive ig1"/>
+                        </div>
+                            
+                        <div class="col-md-10 col-sm-7 col-xs-7 nopadding">
+                            <p class="mbl-txt"> <a href="tel: +91 9493-383-838"> +91 9493-383-838</a></p>
+                        </div>
+                    </div>
+
+                    <div class="flipkart-navbar-search smallsearch col-sm-4 col-xs-11">
+                        <div class="row">
+                            <a href="index.html">
+                                <img src="images/Logo.png" class="img-responsive ig2" style="margin:auto; display:block;"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart largenav col-sm-4">
+                        <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+                    </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+                            <a href="cart.html">
+                                <img src="images/rigt-icon1.png" class="img-responsive ig3" style="float:right;"/>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+                        <a href="log-in.html">
+                                <img src="images/rigt-icon2.png" class="img-responsive ig3" style="float:left;"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row row1 mg-back" >
+                <ul class="largenav">
+                    <li class="upper-links"><a class="links" href="">Raw herb</a></li>
+                    <li class="upper-links"><a class="links" href="">Treatments</a></li>
+                    <li class="upper-links"><a class="links" href="">Diet Planner</a></li>
+                    <li class="upper-links"><a class="links" href="">Consultation</a></li>
+                    <li class="upper-links"><a class="links" href="">Social Cause</a></li>
+                    <li class="upper-links"><a class="links" href="products.html">Products</a></li>
+                    <li class="upper-links"><a class="links" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #000;  padding-top: 2px;">
+        <span class="sidenav-heading">
+            <a href="index.html">
+                <img src="images/Logo.png"></span>
+            </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="">Raw herb </a>
+    <a href="">Treatments </a>
+    <a href="">Diet Planner</a>
+    <a href="">Consultation</a>
+    <a href="">Social Cause</a>
+    <a href="products.html">Products </a>
+    <a href="blog.html">Blog </a>
+</div>
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="col-md-8">
+                <h5 class="abt-txt">Cart</h5>
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aurveda Oil</td>
+                        <td>Rs 200</td>
+                        <td>&times;</td>
+                      </tr>
+                      <tr>
+                        <td>Aurveda Oil</td>
+                        <td>Rs 2000</td>
+                        <td>&times;</td>
+                      </tr>
+                      <tr>
+                        <td>Aurveda Oil</td>
+                        <td>Rs 500</td>
+                        <td>&times;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-4">
+                <h5 class="abt-txt">Order Summary</h5>
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <h5 class="mb-0">Subtotal</h5>
+                            <span>Rs 500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <h5 class="mb-0">Discount</h5>
+                            <span class="text-success">Rs 250</span>
+                        </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <h5 class="mb-0">Total</h5>
+                        <span class="text-primary">Rs 250</span>
+                    </li>
+                    <li class="list-group-item p-3">
+                        <a href="" class="btn btn-primary btn-block">Purchase
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vertical-scrolling ">
+    <footer class="container-fluid ">
+        <div class="container">	
+            <div class="row">
+                <div class="ftr-mnu">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <ul class="ftr-lu">
+                            <h2><span style="font-size:0px; padding:22px 10px 5px 7px; background:#dd2b2b;">2</span>&nbsp;Top Products</h2>
+                            <li><a href="#">Orthovidha</a></li>
+                            <li><a href="#">Lividha </a></li>
+                            <li><a href="#">Udarnidhi</a></li>
+                            <li><a href="#">K-cough</a></li>
+                            <li><a href="#">Laxidha</a></li>
+                            <li><a href="#">Luconika</a></li>
+                            <li><a href="#">Hormonika</a></li>
+                        </ul>   
+                    </div>
+                       
+                       
+                       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                               <ul class="ftr-lu">
+                                   <h2><span style="font-size:0px; padding:22px 10px 5px 7px; background:#dd2b2b;">2</span>&nbsp;Useful Links</h2>
+                                       <li><a href="#">Who we are</a></li>
+                                       <li><a href="#">Get Raw Herbs </a></li>
+                                       <li><a href="#">What we treat</a></li>
+                                       <li><a href="#">Social Cause</a></li>
+                                       <li><a href="#">All Product</a></li>
+                                       <li><a href="#">Career</a></li>
+                                   </ul>
+                        </div>
+                       
+                       
+                       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                               <ul class="ftr-lu">
+                                   <h2><span style="font-size:0px; padding:22px 10px 5px 7px; background:#dd2b2b;">2</span>&nbsp;Legal Information</h2>
+                                       <li><a href="#">About Us</a></li>
+                                       <li><a href="#">Privacy Policy </a></li>
+                                       <li><a href="#">Terms & Conditions</a></li>
+                                       <li><a href="#">Customer Service</a></li>
+                                       <li><a href="#">Return Policy</a></li>
+                                       
+                               </ul>
+                       </div>
+                       
+                       
+                       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                  <ul class="ftr-lu">
+                                   <h2><span style="font-size:0px; padding:22px 10px 5px 7px; background:#dd2b2b;">2</span>&nbsp;Social Media</h2>
+                                       <li><a href="#">Facebook</a></li>
+                                       <li><a href="#">Instagram </a></li>
+                                       <li><a href="#">Twitter</a></li>
+                                       <li><a href="#">Linked in</a></li>
+                                       
+                                  </ul>
+                       </div>
+                       
+                   </div>
+               </div>
+               
+               <div class="row">
+                   
+                   <div class="col-md-6 col-sm-6 col-xs-12">
+                   <div class="letter-box">
+                       <div class="col-md-8 col-sm-8 col-xs-8">
+                           <label for=""style="
+                           color: #fff;
+                           font-weight: bold;
+                           font-size: 20px;">Newsletters</label><br>
+                           <input type="text" placeholder="Enter Your Name" class="ftr-inpt" />
+                           <button class="btn btn-danger ftr-btm" > Subscribe</button>
+                       </div>
+                   </div>
+                   </div>
+                   <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p style="color:#fff; font-family:Helvetica; font-size:15px; padding-top:20px;">&copy; Proudly powered by Trividha Team </p>
+                </div>
+               </div>
+           </div>	
+        </footer>
+    </section>
+</div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tilt.jquery.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+    <script src="assets/owl/vendors/jquery.min.js"></script>
+    <script src="assets/owl/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/fullpage.js/fullpage.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+
+</body>
+</html>
