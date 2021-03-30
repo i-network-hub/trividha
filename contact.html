@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/css/main-style.css">
   <link rel="stylesheet" href="assets/css/media.css">
   
-	
+  <script src="https://kit.fontawesome.com/ab223b40fc.js"></script>
    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
@@ -55,6 +55,19 @@
     .ftm h1{
         text-align: center;
     }
+    .comment-sec {
+      border: none;
+    }
+
+}
+.comment-sec p strong {
+    font-size: 20px;
+    color: #C77B2B;
+    font-family: josefin sans;
+    font-weight: bolder;
+}
+.comment-sec a{
+    color: #000;
 }
    </style>
  </head>
@@ -140,16 +153,30 @@
 
 
         <div class="container">
-            <div class="row">
-                <div class="ftm col-md-5" style=" margin-left: 30px;">
-                    <h5 class="abt-txt2">Dont have an account yet?</h5>
-                    <p class="diat-txt"><a href="sign-up.html">Sign Up </a>now and get all the advantages of Trividha.</p>
-                </div>
+            <div class="row" style="margin-top: 20px;">
+
                 <div class="ftm col-md-6">
-                    <h1 class="abt-txt caree" style=" font-family: fontone; color:#5d7326;">Log In</h1>
-                        <div class="col-lg-12 col-sm-12 col-xs-12 frm">
-                    
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h1 class="abt-txt caree" style=" font-family: fontone; color:#5d7326;">Contact Us</h1>
+                        <div class="col-lg-12 col-sm-12 col-xs-12 frm"  style="margin-bottom: 30px;">
+                     
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                        
+                                <div class="form-group">
+                                    <label for="name" class="frm-txt">Name</label>
+                                    <input type="text" class="form-control" id="" placeholder="" name="">
+                                  </div>
+                                
+                                </div>
+                                <div class="col-md-6 col-sm-12  col-xs-12">
+                        
+                                    <div class="form-group">
+                                        <label for="number" class="frm-txt">Contact Number</label>
+                                        <input type="text" class="form-control" id="" placeholder="" name="number">
+                                      </div>
+                                    
+                                    </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                         
                         <div class="form-group">
                             <label for="email" class="frm-txt">Email</label>
@@ -157,10 +184,10 @@
                           </div>
                         
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
-                                <label for="email" class="frm-txt">Password</label>
-                                <input type="password" class="form-control" id="" placeholder="" name="pw">
+                                <label for="msg" class="frm-txt">Message</label>
+                                <textarea name="" class="form-control" id=""  cols="30" rows="1"></textarea>
                               </div>
                         
                         <div class="form-group">
@@ -168,7 +195,7 @@
                             <button type="submit" class="btn btn-default" style="color: #000;
                             background: #c77b2b;
                             padding: 3px 15px;
-                            border-radius: 0;">Log In</button><span class="">&nbsp; <a href="log-in.html">Log In </a>with Mobile</span>
+                            border-radius: 0;">Submit</button>
                             
                         </p>
                         </div>
@@ -176,8 +203,25 @@
                     
                         </div>
                 </div>
+                <div class="ftm col-md-6" style="margin-top: 70px;">
+                    <div class="row comment-sec col-md-12">
+                        <div class="col-md-12">
+                            
+                            <p class="text"><i class="fa fa-phone-alt"  style="color: #C77B2B;"></i> &nbsp;<strong>Call</strong> <br><a href="tel:+91 9499-38-38-38">+91 9499-38-38-38</a>
+                              <br>
+                            <br>
+                            <i class="fa fa-envelope"  style="color: #C77B2B;"></i> &nbsp;<strong>Email</strong> <br><a href="mailto:">mailus@gmail.com</a>
+                                <br>
+                              <br>
+                             <i class="fa fa-map-pin"  style="color: #C77B2B;"></i> &nbsp;<strong>Address</strong> <br>Abc Colony, XYZ Street, City, State
+                            
+                              </p>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
+
         </div>
     </section>
 
