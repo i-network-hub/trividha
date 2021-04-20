@@ -60,9 +60,6 @@ section {
   .blog-box h2 {
     padding-left: 10px !important;
   }
-  .blog-box a {
-    padding-left: 10px !important;
-  }
   .diseasesec .boxinner {
     display: flex;
     justify-content: center;
@@ -479,23 +476,15 @@ footer {
 }
 
 .prdct-box {
-  width: 300px;
-  height: 350px;
-  background: #fff;
-  box-shadow: 0px 2px 8px #a7a8a5;
   text-align: center;
   margin: auto;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  -webkit-box-shadow: 0px 25px 36px -9px rgba(105, 102, 105, 0.65);
-  -moz-box-shadow: 0px 25px 36px -9px rgba(105, 102, 105, 0.65);
-  box-shadow: 0px 25px 36px -9px rgba(105, 102, 105, 0.65);
   cursor: pointer;
 }
 
 .prdct-box img {
-  width: 120px !important;
+  width: 80px !important;
+  height: 150px;
   display: block;
   margin: auto;
   padding-top: 30px;
@@ -526,18 +515,18 @@ footer {
 }
 
 .prdct-box .pro-bn {
-  background: #dd2b2b;
+  background: #c87b2b;
   border-radius: 0px;
   /* display: none; */
   padding: 5px 18px;
   font-size: 20px;
   margin-top: 10px;
+  border: 1px solid #c87b2b !important;
 }
-
-.prdct-box:hover + .pro-bn {
-  display: block !important;
+.product-text {
+  padding-top: 12%;
+  text-align: center;
 }
-
 /***** career *****/
 
 .career {
@@ -582,37 +571,43 @@ footer {
   min-height: 680px;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
-.blog h1 {
-  margin-top: 28%;
-}
+
 .blog-box {
   width: 80%;
   padding: 0px 40px 30px;
   margin: 0px 130px;
-  display: block;
   background: rgba(216, 206, 187, 0.9);
   box-shadow: 0px 4px 15px #7b7b7b;
 }
 .blog-box h2 {
-  padding-top: 30px;
-  padding-left: 45px;
+  padding-top: 20px;
   font-family: Helvetica;
 }
 .blog-box p {
   font-size: 18px;
   padding-top: 25px;
-  padding-left: 45px;
   font-family: Helvetica;
 }
 .blog-box a {
-  color: #000;
+  position: relative;
+  margin-top: 15px;
+  line-height: 24px;
+  color: white;
   font-size: 15px;
-  padding-left: 45px;
+  font-weight: 600;
+  background: #c87b2b;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #c87b2b;
+  border-radius: 5px;
+  outline: none;
 }
 .blog-box a:hover {
   color: #c87b2b;
-  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #c87b2b;
 }
 .blog-box img {
   height: 200px;
@@ -1021,8 +1016,8 @@ footer {
 }
 
 .artil1 {
-  padding-left: 8%;
   padding-top: 17px;
+  padding-bottom: 10px;
 }
 
 .all {
@@ -1313,7 +1308,17 @@ footer {
 .di-sec4-btf:hover {
   background: #91b130;
 }
-
+.btn-herb {
+  background: #91b130;
+  color: #fff;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.btn-herb:hover {
+  background-color: #789228;
+}
 .wdth {
   width: 20% !important;
 }
@@ -1542,10 +1547,11 @@ a:hover {
   margin-top: 48%;
 }
 .abt-new p {
-  padding-top: 7%;
+  padding-top: 9%;
   font-family: fontthree;
   font-size: 18px;
   font-weight: bold;
+  text-align: justify;
 }
 
 .abt-new-sec p {
@@ -1819,6 +1825,7 @@ a:hover {
 .product-heading {
   padding: 20px;
   text-align: center;
+  color: #fff;
 }
 .product-heading h2,
 h4 {
@@ -1870,7 +1877,8 @@ h4 {
   margin-top: 50px;
   /* overflow-y: scroll; */
   padding-bottom: 30px;
-  text-align: left;
+  text-align: center;
+  margin-left: -40px;
 }
 
 .diseasesec .boxinner {
@@ -2026,9 +2034,36 @@ h4 {
   outline: none !important;
 }
 
-@media only screen and (max-width: 1366px) {
+@media (max-width: 990px) {
+  .diseasesec {
+    position: relative;
+    text-align: left;
+  }
+  .diseasesec .icon {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .diseasesec .boxinner {
+    width: 100%;
+    margin-left: -7% !important;
+    padding-bottom: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  .diseasesec .rightdesc ul {
+    margin-top: 120px;
+  }
   .diseasesec .rightdesc ul li {
-    font-size: 16px;
+    display: flex;
+  }
+  .hair {
+    margin-top: -80px !important;
+  }
+  .diseasesec .rightdesc h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -2198,6 +2233,19 @@ h4 {
 .herb-img {
   padding: 0px 20px 30px;
 }
+@media (max-width: 990px) {
+  .herb-special,
+  .herb-section {
+    background: none !important;
+  }
+}
+.herb-section {
+  background: url(../img/program-bg1.jpg);
+  min-height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
 
 .herb-special {
   background: url(../img/Trividha-times-bg.jpg);
@@ -2210,11 +2258,11 @@ h4 {
   font-family: fontthree;
   font-size: 18px;
   font-weight: bold;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 .herb-special h1 {
   color: #c77b31;
-  padding-top: 6%;
+  padding-top: 2%;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
 }
@@ -2267,7 +2315,7 @@ h4 {
 
 .spacing {
   font-size: 18px;
-  padding: 10px 60px;
+  padding: 10px 20px;
   text-align: left;
 }
 .code-btn {
@@ -2400,6 +2448,8 @@ h4 {
 }
 .list-styled {
   margin-top: 20px;
+  text-align: justify;
+  width: 85%;
 }
 .list-styled li {
   font-size: 18px;
@@ -2417,6 +2467,9 @@ h4 {
 .about-part1 h1 {
   margin-top: -50px;
 }
+.about-part1 p {
+  padding-top: 50px;
+}
 .about-part2 img {
   margin-top: 80px;
 }
@@ -2432,5 +2485,105 @@ h4 {
   }
   .about-part2 h1 {
     margin: auto;
+  }
+  .about-part2 p {
+    margin-top: 40px !important;
+  }
+  .abt-new p {
+    text-align: left;
+    padding: 0%;
+  }
+}
+/*--------------------------Navbar---------------------------*/
+.dropbtn {
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #fff;
+}
+.link {
+  position: relative;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 0px;
+  right: 0;
+  background: #b36d27;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+
+.link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #b36d27;
+}
+
+.pr-box {
+  border: 1px solid lightgray;
+  min-height: 180px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.pr-box .btn-info {
+  border-radius: 0px;
+  background: #c87b2b;
+  border: none;
+}
+.pr-box img {
+  width: 60px;
+  height: 100px;
+  margin-top: 10px;
+}
+.pr {
+  min-height: 500px;
+}
+/*---------------Herb Image----------------*/
+
+@media (max-width: 990px) {
+  .herb-img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="assets/css/main-style.css">
   <link rel="stylesheet" href="assets/css/media.css">
 
+  <script src="https://kit.fontawesome.com/ab223b40fc.js"></script>
    <style>
    .affix {
      top: 0;
@@ -32,8 +33,24 @@
    #fp-nav{
        display: none;
    }
-   
- 
+    .input-qty input{
+      width: 50px;   
+   }
+   .cart-total {
+       margin-left: 30px;
+       margin-top: 60px;
+   }
+   @media (max-width:990px){
+       .card{
+           width: 100vh;
+       }
+       .cart-total{
+           margin-left:0px;
+       }
+       .cart-total h3, a{
+           text-align: center;
+       }
+   }
    </style>
  </head>
  <body>
@@ -84,15 +101,50 @@
             
             
             <div class="row row1 mg-back" >
-                <ul class="largenav">
-                    <li class="upper-links"><a class="links" href="raw-herbs.html">Raw Herb</a></li>
-                    <li class="upper-links"><a class="links" href="body-analysis-vpk.html">Treatments</a></li>
-                    <li class="upper-links"><a class="links" href="diet.html">Diet Planner</a></li>
-                    <li class="upper-links"><a class="links" href="doctor.html">Consultation</a></li>
-                    <li class="upper-links"><a class="links" href="social-cause.html">Social Cause</a></li>
-                    <li class="upper-links"><a class="links" href="products.html">Products</a></li>
-                    <li class="upper-links"><a class="links" href="blog.html">Blog</a></li>
-                </ul>
+                <ul class="largenav ">
+                        <li class="upper-links">
+                            <a class="links dropbtn" href="raw-herbs.html">Raw Herb</a>
+                            
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="doctor.html">Treatments</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="doctor.html">Digestive</a>
+                                <a class="link" href="doctor.html">Endocrine</a>
+                                <a class="link" href="doctor.html">Hair &amp; Skin</a>
+                                <a class="link" href="doctor.html">Urinary</a>
+                                <a class="link" href="doctor.html">Joint Pain</a>
+                                <a class="link" href="doctor.html">Respiratory</a>
+                                <a class="link" href="doctor.html">Gyane</a>
+                                <a class="link" href="doctor.html">Brain</a>
+                              </div></li>
+                              <li class="upper-links">
+                                <a class="links dropbtn" href="diet.html">Diet Planner</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="nutritionals-consultants.html">Consultation</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="social-cause.html">Social Cause</a>
+                                
+                            </li>
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="ayurveda.html">Ayurveda</a>
+                                <a class="link" href="nutraceuticals.html">Nutraceuticals</a>
+                              </div>
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="">Blogs</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="blog.html">Blog</a>
+                                <a class="link" href="article.html">Article</a>
+                              </div>
+                        </li>
+                    </ul>
             </div>
         </div>
     </div>
@@ -105,23 +157,23 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     </div>
     <a href="raw-herbs.html">Raw herb </a>
-    <a href="body-analysis-vpk.html">Treatments </a>
+    <a href="doctor.html">Treatments </a>
     <a href="diet.html">Diet Planner</a>
     <a href="doctor.html">Consultation</a>
     <a href="social-cause.html">Social Cause</a>
     <a href="products.html">Products </a>
     <a href="blog.html">Blog </a>
 </div>
-<div class="doctr-sec3">
+<div class="abt-new1">
     <div class="container ">
         <div class="row col-md-12">
             
-            <h5 class="abt-txt text-center">Cart</h5>
-            <div class="cart-table">
+            <h5 class="abt-txt text-left">Cart</h5>
+          
+            <div class="cart-table col-md-7">
                 <table>
                     <thead>
                       <tr>
-                        <th class="spacing">+</th> 
                         <th class="spacing">Product</th>
                         <th class="spacing">Price</th>
                         <th class="spacing">Quantity</th>
@@ -130,65 +182,86 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="spacing"></td>
+                        
                         <td class="spacing">Aurveda Oil</td>
                         <td class="spacing">Rs 200</td>
-                        <td class="spacing">2</td>
+                        <td class="spacing input-qty"> 
+                           <input type="number" name="" id="">
+                        </td>
                         <td class="spacing">Rs 400</td>
+                        <td class="spacing">
+                            <i class="far fa-times-circle"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="spacing"></td>
+                        
                         <td class="spacing">Aurveda Oil</td>
                         <td class="spacing">Rs 2000</td>
-                        <td class="spacing">1</td>
+                        <td class="spacing input-qty"> 
+                            <input type="number" name="" id="">
+                         </td>
                         <td class="spacing">Rs 2000</td>
+                        <td class="spacing">
+                            <i class="far fa-times-circle"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="spacing"></td>
+                        
                         <td class="spacing">Aurveda Oil</td>
                         <td class="spacing">Rs 500</td>
-                        <td class="spacing">3</td>
+                        <td class="spacing input-qty"> 
+                            <input type="number" name="" id="">
+                         </td>
                         <td class="spacing">Rs 1500</td>
+                        <td class="spacing">
+                            <i class="far fa-times-circle"></i>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
+                  
             </div>
-            <div class="row text-center" style="margin-top: 20px;">
-                <form class="col-md-4 card">
+            <div class="col-md-3">
+                <div class="input-group total-btn">
+                    <a class="theme-btn btn-style-three">Add More </a>
+                </div>
+              </div>
+            <div class="col-md-4 cart-total">
+                <div class="row " style="margin-top: 20px;">
+                   <h3 class="heading">Cart Total</h3>
+                    <div class="">
+                        <div class="input-group total-btn">
+                            <p class="theme-btn btn-style-four">Sub Total : 3900/- </p>
+                        </div>
+                      </div>
+                    <div class=" card">
+                      <div class="input-group">
+                         <input type="text" class="code-btn" placeholder="Promo Code"> <button type="submit" class="theme-btn btn-style-three">Apply</button>
+                      </div>
+                    </div>
+                    <br>
+                   <a href="" style="color: #000;text-decoration: underline;">Change Shipping Details <i class="fas fa-arrow-right"></i> </a>
+                   
+                  </div>
+            </div>
+            <!-- <div class="row col-md-12 text-center" style="margin-top: 20px;">
+                <div  card">
                   <div class="input-group">
                      <input type="text" class="code-btn" placeholder="Promo Code"> <button type="submit" class="theme-btn btn-style-three">Apply</button>
                   </div>
-                </form>
-                <form class="col-md-3">
+                </div>
+                <div class="col-md-4">
                   <div class="input-group total-btn">
                       <p class="theme-btn btn-style-four">Sub Total : 3900/- </p>
                   </div>
-                </form>
-              
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group total-btn">
+                        <a class="theme-btn btn-style-three">Add More </a>
+                    </div>
+                  </div>
               </div>
-            <!-- <div class="col-md-4">
-                <h5 class="abt-txt">Order Summary</h5>
-                <div class="card">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                            <h5 class="mb-0">Subtotal</h5>
-                            <span>Rs 500</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                            <h5 class="mb-0">Discount</h5>
-                            <span class="text-success">Rs 250</span>
-                        </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <h5 class="mb-0">Total</h5>
-                        <span class="text-primary">Rs 250</span>
-                    </li>
-                    <li class="list-group-item p-3">
-                        <a href="" class="btn btn-primary btn-block">Purchase
-                    </a>
-                    </li>
-                </ul>
-            </div>
-            </div> -->
+         -->
         </div>
     </div>
 </div>

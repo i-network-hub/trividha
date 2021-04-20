@@ -76,24 +76,20 @@
 
 .upper-links {
   display: inline-block;
-  padding: 0px 40px;
+  padding: 0px 42px;
   line-height: 40px;
   font-family: fontthree;
   letter-spacing: 0;
   color: inherit;
   border: none;
   outline: none;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
   margin-bottom: 0px;
-}
-
-.dropdown:hover {
-  background-color: #fff;
 }
 
 .dropdown:hover .links {

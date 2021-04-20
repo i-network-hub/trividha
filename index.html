@@ -23,7 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
     <script src="assets/owl/vendors/jquery.min.js"></script>
     <script src="assets/owl/owlcarousel/owl.carousel.js"></script>
-   
+    <script type="text/javascript" src="assets/js/nav.js"></script>
    
    <script type="text/javascript" src="assets/js/nav.js"></script>
   
@@ -48,6 +48,16 @@
 		  margin-top: -10px;
 	  }
 	  
+  }
+  .blog-box {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin: auto;
+  }
+  .blog-box img{
+	  margin-bottom: 20px !important;
   }
   </style>
 </head>
@@ -98,7 +108,7 @@
 	
 		
     <div id="main">
-	
+		
 <section class="container-fluid header nopadding vertical-scrolling b-img" >
 	<div id="flipkart-navbar" class=" top-fix">
 
@@ -146,15 +156,50 @@
             
             
             <div class="row row1 mg-back" >
-                <ul class="largenav">
-                    <li class="upper-links"><a class="links" href="raw-herbs.html">Raw Herb</a></li>
-                    <li class="upper-links"><a class="links" href="body-analysis-vpk.html">Treatments</a></li>
-                    <li class="upper-links"><a class="links" href="diet.html">Diet Planner</a></li>
-                    <li class="upper-links"><a class="links" href="doctor.html">Consultation</a></li>
-                    <li class="upper-links"><a class="links" href="social-cause.html">Social Cause</a></li>
-                    <li class="upper-links"><a class="links" href="products.html">Products</a></li>
-                    <li class="upper-links"><a class="links" href="blog.html">Blog</a></li>
-                </ul>
+                <ul class="largenav ">
+                        <li class="upper-links">
+                            <a class="links dropbtn" href="raw-herbs.html">Raw Herb</a>
+                            
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="doctor.html">Treatments</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="doctor.html">Digestive</a>
+                                <a class="link" href="doctor.html">Endocrine</a>
+                                <a class="link" href="doctor.html">Hair &amp; Skin</a>
+                                <a class="link" href="doctor.html">Urinary</a>
+                                <a class="link" href="doctor.html">Joint Pain</a>
+                                <a class="link" href="doctor.html">Respiratory</a>
+                                <a class="link" href="doctor.html">Gyane</a>
+                                <a class="link" href="doctor.html">Brain</a>
+                              </div></li>
+                              <li class="upper-links">
+                                <a class="links dropbtn" href="diet.html">Diet Planner</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="nutritionals-consultants.html">Consultation</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="social-cause.html">Social Cause</a>
+                                
+                            </li>
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="ayurveda.html">Ayurveda</a>
+                                <a class="link" href="nutraceuticals.html">Nutraceuticals</a>
+                              </div>
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="">Blogs</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="blog.html">Blog</a>
+                                <a class="link" href="article.html">Article</a>
+                              </div>
+                        </li>
+                    </ul>
             </div>
         </div>
     </div>
@@ -168,7 +213,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     </div>
     <a href="raw-herbs.html">Raw herb </a>
-    <a href="body-analysis-vpk.html">Treatments </a>
+    <a href="doctor.html">Treatments </a>
     <a href="diet.html">Diet Planner</a>
     <a href="doctor.html">Consultation</a>
     <a href="social-cause.html">Social Cause</a>
@@ -221,7 +266,7 @@
 					
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					
-						<h1 class="abt-txt " style=" font-family: fontone; margin-top: 10%;">About Us</h1>
+						<h1 class="abt-txt " style=" font-family: fontone;">About Us</h1>
 						<h3 class="abt-txt2">Ayurveda: The essence of life</h3>
 						
 						<p class="diat-txt" style="color:#04060a; font-size:18px;padding-top:18px; font-family: fontthree; ">Lorem ipsum dolor sit amet 
@@ -751,150 +796,114 @@
 
 						<!-------- blog section		-----	 -->
 				
-				<section class="container-fluid blog vertical-scrolling">
-					<div class="container">
-					<!-- <h1 class="abt-txt text-center" style=" font-family: fontone; padding-top:17px;">Product</h1> -->
-						<div class="row">
-						 
-							<div class="col-md-6 col-sm-6 col-xs-12">
-							<h1 class="abt-txt artil" style=" font-family: fontone; padding-top:17px;">Articles</h1>
-							
-							<div class="item" >
-							
-								<div class="blog-box">
-									<div class="">
+						<section class="container-fluid blog vertical-scrolling">
+							<div class="container">
+							<!-- <h1 class="abt-txt text-center" style=" font-family: fontone; padding-top:17px;">Product</h1> -->
+								<div class="row">
+								 
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<h1 class="abt-txt text-center" style=" font-family: fontone;">Blogs</h1>
 									
-										<div>
-											<h2>Topic</h2>
-											
-											<p>Lorem ipsum dolor sit amet,
-												consectetur<br>  
-												sed do eiusmod tempor incididunt 
-												ut.</p>
-										 </div>
-									 </div>
-									 <a href="blog.html" class="" style="color:#de4742;">Read</a>
-								</div>
-								
-								
-							</div>
-							
-							
-							
-							</div>
-						
-							
-							<div class="col-md-6 col-sm-6 col-xs-12">
-							<h1 class="abt-txt  artil1" style=" font-family: fontone;">Blogs</h1>
-								
-							<div class="item">
-							
-								<div class="blog-box">
-									<div class="">
+									<div class="item" >
 									
-										<div>
-											<h2>Topic</h2>
+										<div class="blog-box">
+											<div class="">
 											
-											<p>Lorem ipsum dolor sit amet,
-											consectetur<br>  
-											sed do eiusmod tempor incididunt 
-											ut.</p>
-										 </div>
-									 </div>
-									 <a href="blog.html" class="" style="color:#de4742;">Read</a>
+												<div>
+													<h2>Ayurveda</h2>
+													<img class="col-md-10 img-responsive" src="assets/img/about-pic5.png" alt="">
+													<p>Lorem ipsum dolor sit amet,consectetur<br> sed do eiusmod tempor incididunt ut.</p>
+												 </div>
+											 </div>
+											 <a href="blog.html" class="" >Read</a>
+										</div>
+										
+										
+									</div>
+									
+									
+									
+									</div>
 								
+									
+									<div class="col-md-6 col-sm-6 col-xs-12">
+									<h1 class="abt-txt text-center artil1" style=" font-family: fontone;">Articles</h1>
+										
+									<div class="item">
+									
+										<div class="blog-box">
+											<div class="">
+												<div>
+													<h2>Ayurveda</h2>
+													<img class="col-md-10 img-responsive" src="assets/img/about-bg.jpg" alt="">
+													<p>Lorem ipsum dolor sit amet,consectetur<br> sed do eiusmod tempor incididunt ut.</p>
+												 </div>
+											 </div>
+											 <a href="article.html" class="" >Read</a>
+										
+										</div>
+										
+									</div>
+										
+										
+									</div>
+									
+									
+									
+									
 								</div>
-								
-							</div>
-								
-								
 							</div>
 							
-							
-							
-							
-						</div>
-					</div>
-					
-				</section>
-				
+						</section>
 				<!-------- blog section		-----	 -->
 				
 				
-				<!-------- products section		-----	 -->
-				<section class="container-fluid product">
+			<section class="container-fluid doctr-sec3">
 				<div class="container">
-					<h1 class="abt-txt text-center" style=" font-family: fontone; padding-top:17px;">Products</h1>
-						
-						
-						<div class="row">
-							<div class="col-md-4">
-								 <div class="prdct-box">
-									<img src="assets/img/pro1.png" class="img-responsive"/>
-										<p class="hding1">Udar Nidhi</p>
-										<p class="hding2">Small Description</p>
-										<p class="hding3">Lorem Ispum</p>
-										<a href="product-single.html">
-										<button type="button" class="btn btn-danger pro-bn" style="display:none;">Shop Now</button>
-										</a>
-								 </div>
+					<h1 class="heading text-center" style="margin-bottom: 50px;">Our Products</h1>
+				<div class="row col-md-12">
+					<div class="">
+						<div class="item col-md-3">
+						 <div class="prdct-box">
+							<img src="assets/img/pro1.png" class="img-responsive"/>
+								<p class="hding1">Udar Nidhi</p>
 								
-								<!-- <div class="">
-								<div class="prdct-box">
-									<img src="assets/img/pro2.png" class="img-responsive"/>
-									<p class="hding1">Lividha</p>
-										<p class="hding2">Small Description</p>
-										<p class="hding3">Lorem Ispum</p>
-										<button type="button" class="btn btn-danger pro-bn" style="display:none;">Shop Now</button>
-								 
-											
-								 </div>
-								</div>
 								
-								<div class="">
-								 <div class="prdct-box">
-									<img src="assets/img/pro3.png" class="img-responsive" style="width:130px !important;"/>
-									<p class="hding1">K- Cough</p>
-										<p class="hding2">Small Description</p>
-										<p class="hding3">Lorem Ispum</p>
-										<button type="button" class="btn btn-danger pro-bn" style="display:none;">Shop Now</button>
-								 
-										
-								 </div>
-								</div> -->
+						 </div>
+						</div>
+						<div class="item col-md-3">
+							<div class="prdct-box">
+							   <img src="assets/img/pro3.png" class="img-responsive" style="width:130px !important;"/>
+							   <p class="hding1">K- Cough</p>
+								   
+								  
 							</div>
-							<div class="col-md-4">
-								<div class="prdct-box">
-									<img src="assets/img/pro2.png" class="img-responsive"/>
-									<p class="hding1">Lividha</p>
-										<p class="hding2">Small Description</p>
-										<p class="hding3">Lorem Ispum</p>
-										<a href="product-single.html">
-										<button type="button" class="btn btn-danger pro-bn" style="display:none;">Shop Now</button>
-									    </a>
-									</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="prdct-box">
-									<img src="assets/img/pro3.png" class="img-responsive" style="width:130px !important;"/>
-									<p class="hding1">K- Cough</p>
-										<p class="hding2">Small Description</p>
-										<p class="hding3">Lorem Ispum</p>
-										<a href="product-single.html">
-										<button type="button" class="btn btn-danger pro-bn" style="display:none;">Shop Now</button>
-										</a>
-									</div>
-							</div>
+						   </div>
+						   
+						<div class="item col-md-3">
+						<div class="prdct-box">
+							<img src="assets/img/pro2.png" class="img-responsive"/>
+							<p class="hding1">Lividha</p>
+								
+								  
+						 </div>
+						</div>
+						
+						<div class="item col-md-3">
+						 <div class="prdct-box">
+							<img src="assets/img/pro3.png" class="img-responsive" style="width:130px !important;"/>
+							<p class="hding1">K- Cough</p>
+								
 							
-
+						 </div>
 						</div>
 					</div>
-					<a href="products.html" style="color:#000; float:left; padding-left: 80px;
-			padding-top:0px; font-size: 15px;"><span style="background:#dd2b2b; padding:7px; color:#fff;">More</span> Product</a>
-					
-					</section>
-				<!-------- products section		-----	 -->
+				</div>
+				<div class="text-center">
+					<a href="products.html" class=" btn btn-style-three" style="margin-top: 40px;">More To Know</a>
+				</div>
+			</div>
+			</section>
 				
 				
 				<!-------- jpb career section		-----	 -->	

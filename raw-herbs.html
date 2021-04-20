@@ -73,9 +73,50 @@
   margin-top: 20px;
   padding-top: 30px;
 }
-.owl-theme .owl-nav  {
-    display: none;
+.owl-carousel, .owl-carousel .owl-item .owl-raw{
+	position: relative;
 }
+.owl-theme .owl-nav {
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.owl-carousel .owl-nav button.owl-next {
+	position: absolute;
+	color: #000;
+    border: none;
+	padding: 5px;
+	right: 3%;
+    top: 30%;
+    font-size: 45px !important;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	position: absolute;
+	color: #000;
+    border: none;
+	padding: 5px;
+	left: 3%;
+    top: 30%;
+    font-size: 45px !important;
+}
+.owl-carousel .owl-nav button.owl-prev, button.owl-prev :hover{
+	color: #c87b2b;
+}
+.owl-carousel .owl-nav button.owl-next, button.owl-next :hover{
+	color: #c87b2b;
+}
+
+
+/* 
+.owl-raw .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    font-size: 45px !important;
+} */
   </style>
 </head>
 
@@ -84,6 +125,7 @@
 
 
 <div class="wrapper">
+
 
 			<section class="container-fluid bnr-di " style="padding-left:0; padding-right:0;">
 			
@@ -132,15 +174,50 @@
 						
 						
 						<div class="row row1 mg-back" >
-							<ul class="largenav">
-								<li class="upper-links"><a class="links" href="raw-herbs.html">Raw Herb</a></li>
-								<li class="upper-links"><a class="links" href="body-analysis-vpk.html">Treatments</a></li>
-								<li class="upper-links"><a class="links" href="diet.html">Diet Planner</a></li>
-								<li class="upper-links"><a class="links" href="doctor.html">Consultation</a></li>
-								<li class="upper-links"><a class="links" href="social-cause.html">Social Cause</a></li>
-								<li class="upper-links"><a class="links" href="products.html">Products</a></li>
-								<li class="upper-links"><a class="links" href="blog.html">Blog</a></li>
-							</ul>
+							 <ul class="largenav ">
+                        <li class="upper-links">
+                            <a class="links dropbtn" href="raw-herbs.html">Raw Herb</a>
+                            
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="doctor.html">Treatments</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="doctor.html">Digestive</a>
+                                <a class="link" href="doctor.html">Endocrine</a>
+                                <a class="link" href="doctor.html">Hair &amp; Skin</a>
+                                <a class="link" href="doctor.html">Urinary</a>
+                                <a class="link" href="doctor.html">Joint Pain</a>
+                                <a class="link" href="doctor.html">Respiratory</a>
+                                <a class="link" href="doctor.html">Gyane</a>
+                                <a class="link" href="doctor.html">Brain</a>
+                              </div></li>
+                              <li class="upper-links">
+                                <a class="links dropbtn" href="diet.html">Diet Planner</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="nutritionals-consultants.html">Consultation</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="social-cause.html">Social Cause</a>
+                                
+                            </li>
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="ayurveda.html">Ayurveda</a>
+                                <a class="link" href="nutraceuticals.html">Nutraceuticals</a>
+                              </div>
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="">Blogs</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="blog.html">Blog</a>
+                                <a class="link" href="article.html">Article</a>
+                              </div>
+                        </li>
+                    </ul>
 						</div>
 					</div>
 				</div>
@@ -154,7 +231,7 @@
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 				</div>
 				<a href="raw-herbs.html">Raw herb </a>
-				<a href="body-analysis-vpk.html">Treatments </a>
+				<a href="doctor.html">Treatments </a>
 				<a href="diet.html">Diet Planner</a>
 				<a href="doctor.html">Consultation</a>
 				<a href="social-cause.html">Social Cause</a>
@@ -275,7 +352,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				</div>
             </section>
 		
-<section class="container-fluid abt-new-sec">
+<section class="container-fluid abt-new">
 				
 					<div class="row">
 					<div class="col-md-12 colsm-12 col-xs-12">
@@ -332,7 +409,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 	<h1 class="abt-txtt text-center" style=" font-family: 'Philosopher', sans-serif;font-weight:bold; margin-top:2%;">Raw Herbs</h1>
 					
 						<div class="row">
-							<div class="owl-carousel owl-theme owl-product">
+							<div class="owl-carousel owl-theme owl-raw">
 								<div class="item">
 									<div class="prdct-box">
 										<img src="assets/img/kutki.png" class="img-responsive img-rounded"/>
@@ -385,7 +462,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 											<button type="button"  class="btn btn-danger pro-bn" style="display:none;" data-toggle="modal" data-target="#myModal">Get Quote</button>
 									</div>
 								</div>
+							
 							</div>
+							
 						</div>
 							
 							<div class="col-md-1 col-xs-12">
