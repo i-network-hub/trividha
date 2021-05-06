@@ -111,10 +111,8 @@
 .abt-txt {
     font-family: fontone;
     color: #c87b2b;
-    padding-top: 65px;
     font-size: 28px;
     font-family: fontone;
-    padding-top: 0px;
     padding-left: 15px;
 }
 	.abt-txt2 {
@@ -184,7 +182,7 @@
     margin-left: auto;
 }
 .blog-box h2{
-	 padding-top: 0px;
+	 padding-top: auto;
     padding-left: 15px;
 	font-family:Helvetica;
 	font-size:18px;
@@ -234,7 +232,7 @@
 .man-img{
 
  width:320px;
- margin-top:30px;
+ margin-top:10px;
  
 }
 .iconsec {
@@ -315,7 +313,7 @@
     width: 30px;
     margin-top: 15px;
 }
-.top-hdr .ig3 {
+.top-hdr .ig3  {
     width: 30px;
     margin-top: 10px;
     margin-right: 10px;
@@ -470,10 +468,7 @@ footer {
 	display:none;
 	
 }
-.rw-hrb{
-	display:none;
-	
-}
+
 
 .mobile-dspy{
 	display:none;
@@ -503,8 +498,7 @@ footer {
 
 .alin-mel {
     position: absolute;
-    top: 36%;
-    left: 27%;
+    top: 25%;
     width: 45%;
     /* margin: auto; */
 }
@@ -555,7 +549,7 @@ footer {
     margin-top: 15px;
 }
 
- .ig3 {
+ .ig3  {
     width: 30px;
     margin-top: 10px;
     margin-right: 10px;
@@ -1054,7 +1048,7 @@ footer {
     margin-top: 15px;
 }
 
- .ig3 {
+ .ig3  {
     width: 30px;
     margin-top: 10px;
     margin-right: 10px;
@@ -1583,7 +1577,7 @@ footer {
     margin-top: 15px;
 }
 
- .ig3 {
+ .ig3  {
     width: 30px;
     margin-top: 10px;
     margin-right: 10px;

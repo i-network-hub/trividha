@@ -38,15 +38,37 @@
    <!-- <script type="text/javascript" src="assets/fullpage.js/fullpage.js"></script> -->
    <script type="text/javascript" src="assets/js/nav.js"></script>
 </head>
-
+<style>
+    .category-select{
+        margin-left: -60px;
+    }
+    @media (max-width:990px) {
+        .category-select{
+        margin-left: 40px;
+    }  
+    }
+</style>
 
 <body >
 
 
+
+
 <div class="wrapper">
+    <div class="icon-bar">
+   
+        <a href="#" class="twitter lift"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="twitter lift"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+        
+        
+       
+        <a href="#" class="linkedin lift"><i class="fa fa-linkedin"></i></a>  
+        <a href="#" class="facebook lift"><i class="fa fa-facebook"></i></a>
+        
+   </div> 
 
-
-			<section class="container-fluid bnr-di " style="padding-left:0; padding-right:0;">
+<div id="main">
+			<section class="container-fluid  header nopadding vertical-scrolling b-img">
 
                 <div id="flipkart-navbar" class=" top-fix">
 
@@ -59,7 +81,7 @@
                                     <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ 
                                         <a href="index.html"><img src="images/Logo.png" class="img-responsive ig" style="margin:auto; display:block;"/> </a></span>
                                     <div class="col-md-2 col-sm-5 col-xs-5 nopadding">
-                                        <img src="images/img1.png" class="img-responsive ig1"/>
+                                        <img src="images/img1.png" class="img-responsive ig1 lift"/>
                                     </div>
                                         
                                     <div class="col-md-10 col-sm-7 col-xs-7 nopadding">
@@ -78,13 +100,13 @@
                                     <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
                                 </div>
                                     <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
-                                        <a href="cart.html">
-                                            <img src="images/rigt-icon1.png" class="img-responsive ig3" style="float:right;"/>
+                                        <a href="cart.html" target="_blank">
+                                            <img src="images/rigt-icon1.png" class="img-responsive ig3 lift lift" style="float:right;"/>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
-                                    <a href="log-in.html">
-                                            <img src="images/rigt-icon2.png" class="img-responsive ig3" style="float:left;"/>
+                                    <a href="log-in.html" target="_blank">
+                                            <img src="images/rigt-icon2.png" class="img-responsive ig3 lift lift" style="float:left;"/>
                                         </a>
                                     </div>
                                 </div>
@@ -93,15 +115,50 @@
                         
                         
                         <div class="row row1 mg-back" >
-                            <ul class="largenav">
-                                <li class="upper-links"><a class="links" href="raw-herbs.html">Raw Herb</a></li>
-                                <li class="upper-links"><a class="links" href="body-analysis-vpk.html">Treatments</a></li>
-                                <li class="upper-links"><a class="links" href="diet.html">Diet Planner</a></li>
-                                <li class="upper-links"><a class="links" href="doctor.html">Consultation</a></li>
-                                <li class="upper-links"><a class="links" href="social-cause.html">Social Cause</a></li>
-                                <li class="upper-links"><a class="links" href="products.html">Products</a></li>
-                                <li class="upper-links"><a class="links" href="blog.html">Blog</a></li>
-                            </ul>
+                            <ul class="largenav ">
+                        <li class="upper-links">
+                            <a class="links dropbtn" href="raw-herbs.html">Raw Herb</a>
+                            
+                        </li>
+
+                        <li class="upper-links dropdown">
+                             <a class="links dropbtn" href="doctor.html" target="_blank">Treatments</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="doctor.html">Digestive</a>
+                                <a class="link" href="doctor.html">Endocrine</a>
+                                <a class="link" href="doctor.html">Hair &amp; Skin</a>
+                                <a class="link" href="doctor.html">Urinary</a>
+                                <a class="link" href="doctor.html">Joint Pain</a>
+                                <a class="link" href="doctor.html">Respiratory</a>
+                                <a class="link" href="doctor.html">Gyane</a>
+                                <a class="link" href="doctor.html">Brain</a>
+                              </div></li>
+                              <li class="upper-links">
+                                <a class="links dropbtn" href="diet.html">Diet Planner</a>
+                                
+                            </li><li class="upper-links">
+                                <a class="links dropbtn" href="nutritionals-consultants.html" target="_blank">Consultation</a>
+                                
+                            </li><li class="upper-links">
+                                 <a class="links dropbtn" href="social-cause.html" target="_blank">Social Cause</a>
+                                
+                            </li>
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="ayurveda.html" target="_blank">Ayurveda</a>
+                               <a class="link" href="nutraceuticals.html" target="_blank">Nutraceuticals</a>
+                              </div>
+                        </li>
+
+                        <li class="upper-links dropdown">
+                            <a class="links dropbtn" href="">Blogs</a>
+                            <div class="dropdown-content">
+                                <a class="link" href="blog.html" target="_blank">Blog</a>
+                                <a class="link" href="article.html" target="_blank">Article</a>
+                              </div>
+                        </li>
+                    </ul>
                         </div>
                     </div>
                 </div>
@@ -115,7 +172,7 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 </div>
                 <a href="raw-herbs.html">Raw herb </a>
-                <a href="body-analysis-vpk.html">Treatments </a>
+                <a href="doctor.html">Treatments </a>
                 <a href="diet.html">Diet Planner</a>
                 <a href="doctor.html">Consultation</a>
                 <a href="social-cause.html">Social Cause</a>
@@ -123,13 +180,13 @@
                 <a href="blog.html">Blog </a>
             </div>
 
-				<img src="assets/img/home-remedies.jpg" class="img-responsive" style="margin-top: -40px;" />
+				<img src="assets/img/home-remedies.jpg" class="img-responsive mt-100"/>
 				
 			</section>
 <section class="container-fluid doctr-sec3">
     <div class="container">
-    <h1 class="heading text-center" style="padding-top: 20px;">know your Disease</h1>
-    <h1 class="abt-txtt text-center heading-two" style="font-family: 'Philosopher', sans-serif; margin-top:-60px; color:#074a0a; font-weight:bold; font-size:20px; padding-bottom:20px;">Diseases are grouped into categories to help you find home remedies in an easier way</h1>
+    <h1 class="heading text-center">know your Disease</h1>
+    <h1 class="abt-txtt text-center heading-two" style="font-family: 'Philosopher', sans-serif; color:#074a0a; font-weight:bold; font-size:20px; padding-bottom:20px;">Diseases are grouped into categories to help you find home remedies in an easier way</h1>
         
     
         <div class="row">
@@ -137,8 +194,8 @@
              <!-- <img src="assets/img/man-body.png" class="img-responsive man-body" style=""/> -->
             </div>
             
-            <div class="col-md-7 col-xs-12">
-                <div style="margin-bottom: 20px;">
+            <div class="col-md-4 col-xs-12">
+                <div class="category-select" >
                     <div class="dropdown">
                         <button class="btn btn-warning dropdown-toggle fx-b" type="button" data-toggle="dropdown">Select Category
                         <span class="caret"></span></button>
@@ -157,9 +214,9 @@
                 </div>
             </div>
             
-            <div class="diseasesec ">
-                <div class="boxinner" id="25" style="margin-left: 45px;"> 
-                    <div class="icon">
+            <div class="diseasesec mt-20 col-md-12">
+                <div class="boxinner" id="25"> 
+                    <div class="icon lift">
                     <img src="assets/img/i1.png" alt="Digestive " title="Digestive ">
                     </div>
                     <div class="rightdesc">
@@ -167,25 +224,11 @@
                         <h3>Digestive </h3>
                     </a>
                     <ul>
-                        <li><a href="disease.html">Acid Reflux (GERD)</a></li> <li><a href="">Anaemia</a></li> <li><a href="">Anorexia nervosa</a></li> <li><a href="">Chronic Fatigue Syndrome</a></li> <li><a href="">Chronic Gastritis</a></li> <li><a href="">Colitis</a></li> <li><a href="">Crohn’s Disease</a></li> <li><a href="">Fatigue</a></li> <li><a href="">Flatulence</a></li> <li><a href="">Gallstone</a></li> <li><a href="">Jaundice</a></li> <li><a href="">Liver Cirrhosis</a></li> <li><a href="">Sickle Cell Anaemia</a></li> <li><a href="">Ano-rectal </a></li> <li><a href="">Irritable Bowel Syndrome (IBS)</a></li> <li><a href="">Hyperacidity </a></li> <li><a href="">Constipation </a></li> <li><a href="">Ulcerative Colitis</a></li>
+                        <li><a href="disease.html" target="_blank">Acid Reflux (GERD)</a></li> <li><a href="" target="_blank">Anaemia</a></li> <li><a href="" target="_blank">Anorexia nervosa</a></li> <li><a href="" target="_blank">Chronic Fatigue Syndrome</a></li> <li><a href="" target="_blank">Chronic Gastritis</a></li> <li><a href="" target="_blank">Colitis</a></li> <li><a href="" target="_blank">Crohn’s Disease</a></li> <li><a href="" target="_blank">Fatigue</a></li> <li><a href="" target="_blank">Flatulence</a></li> <li><a href="" target="_blank">Gallstone</a></li> <li><a href="" target="_blank">Jaundice</a></li> <li><a href="" target="_blank">Liver Cirrhosis</a></li> <li><a href="" target="_blank">Sickle Cell Anaemia</a></li> <li><a href="" target="_blank">Ano-rectal </a></li> <li><a href="" target="_blank">Irritable Bowel Syndrome (IBS)</a></li> <li><a href="" target="_blank">Hyperacidity </a></li> <li><a href="" target="_blank">Constipation </a></li> <li><a href="" target="_blank">Ulcerative Colitis</a></li>
                     </ul>
                     </div>
                 </div>
 
-                <div class="boxinner" id="21" style="margin-left: 50px; margin-top: -30px;">
-                    <div class="icon">
-                    <img src="assets/img/i2.png" alt="Endocrine " title="Endocrine ">
-                    </div>
-                    <div class="rightdesc">
-                    <a href="">
-                        <h3>Endocrine </h3>
-                    </a>
-                    <ul>
-                        <li><a href="">Obesity 
-                        </a></li> <li><a href="">Thyroid </a></li> <li><a href="">Diabetes </a></li>
-                    </ul>
-                </div>
-            </div>
 
             </div>
         </div>
@@ -194,238 +237,260 @@
 <section class="container-fluid doctr-sec3">
     <div class="diseasesec col-md-12">
     
+        <div class="boxinner" id="21">
+            <div class="icon lift">
+            <img src="assets/img/i2.png" alt="Endocrine " title="Endocrine ">
+            </div>
+            <div class="rightdesc">
+            <a href="" target="_blank">
+                <h3>Endocrine </h3>
+            </a>
+            <ul>
+                <li><a href="" target="_blank">Obesity 
+                </a></li> <li><a href="" target="_blank">Thyroid </a></li> <li><a href="" target="_blank">Diabetes </a></li>
+            </ul>
+        </div>
+    </div>
     <div class="boxinner hair" id="10">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i3.png" alt="Hair And Skin" title="Hair And Skin">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Hair And Skin</h3>
         </a>
         <ul>
-            <li><a href="">Vitiligo</a></li> <li><a href="">Urticaria (Hives)</a></li> <li><a href="">Psoriasis </a></li> <li><a href="">Hair Fall</a></li> <li><a href="">Allergies </a></li> <li><a href="">Dandruff</a></li> <li><a href="">Tinea</a></li> <li><a href="">Eczema </a></li>
+            <li><a href="" target="_blank">Vitiligo</a></li> <li><a href="" target="_blank">Urticaria (Hives)</a></li> <li><a href="" target="_blank">Psoriasis </a></li> <li><a href="" target="_blank">Hair Fall</a></li> <li><a href="" target="_blank">Allergies </a></li> <li><a href="" target="_blank">Dandruff</a></li> <li><a href="" target="_blank">Tinea</a></li> <li><a href="" target="_blank">Eczema </a></li>
         </ul>
         </div>
     </div>
+</div>
+</section>
+    <section class="container-fluid doctr-sec3">
+        <div class="diseasesec col-md-12">
+        
     <div class="boxinner" id="11">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i5.png" alt="Joint pain" title="Joint pain">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Joint pain</h3>
         </a>
         <ul>
-            <li><a href="">Ankylosing spondylitis </a></li> <li><a href="">Cervical Spondylosis </a></li> <li><a href="">Rheumatoid Arthritis </a></li> <li><a href="">Osteoarthritis</a></li> <li><a href="">Gout</a></li>
+            <li><a href="" target="_blank">Ankylosing spondylitis </a></li> <li><a href="" target="_blank">Cervical Spondylosis </a></li> <li><a href="" target="_blank">Rheumatoid Arthritis </a></li> <li><a href="" target="_blank">Osteoarthritis</a></li> <li><a href="" target="_blank">Gout</a></li>
         </ul>
         </div>
     </div>
     <div class="boxinner" id="14">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i6.png" alt="Respiratory" title="Respiratory">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Respiratory</h3>
         </a>
         <ul>
-            <li><a href="">Asthma </a></li> <li><a href="">Bronchitis</a></li> <li><a href="">sinusitis </a></li> <li><a href="">Rhinitis </a></li> <li><a href="">Allergies </a></li> <li><a href="">Chronic Laryngitis</a></li> <li><a href="">COPD</a></li> <li><a href="">Influenza</a></li> <li><a href="">Pleurisy</a></li>
+            <li><a href="" target="_blank">Asthma </a></li> <li><a href="" target="_blank">Bronchitis</a></li> <li><a href="" target="_blank">sinusitis </a></li> <li><a href="" target="_blank">Rhinitis </a></li> <li><a href="" target="_blank">Allergies </a></li> <li><a href="" target="_blank">Chronic Laryngitis</a></li> <li><a href="" target="_blank">COPD</a></li> <li><a href="" target="_blank">Influenza</a></li> <li><a href="" target="_blank">Pleurisy</a></li>
         </ul>
         </div>
     </div>
 </div>
 </section>
 <section class="container-fluid doctr-sec3">
-    <div class="diseasesec col-md-12" style="margin-top: -70px;">
+    <div class="diseasesec col-md-12">
 
        <div class="boxinner" id="9">
-           <div class="icon">
+           <div class="icon lift">
            <img src="assets/img/i7.png" alt="Gynae" title="Gynae">
            </div>
            <div class="rightdesc">
-           <a href="">
+           <a href="" target="_blank">
                <h3>Gynae</h3>
            </a>
            <ul>
-               <li><a href="">Infertility </a></li> <li><a href="">Frigidity</a></li> <li><a href="">Leucorrhoea </a></li> <li><a href="">Menopause</a></li>
+               <li><a href="" target="_blank">Infertility </a></li> <li><a href="" target="_blank">Frigidity</a></li> <li><a href="" target="_blank">Leucorrhoea </a></li> <li><a href="" target="_blank">Menopause</a></li>
            </ul>
            </div>
        </div>
        
        <div class="boxinner" id="24">
-           <div class="icon">
+           <div class="icon lift">
            <img src="assets/img/i3.png" alt="Most Common Diseases" title="Most Common Diseases">
            </div>
            <div class="rightdesc">
-           <a href="">
+           <a href="" target="_blank">
                <h3>Most Common Diseases</h3>
            </a>
            <ul>
-               <li><a href="">Obesity </a></li> 
-               <li><a href="">Migraine </a></li> 
-               <li><a href="">Diabetes </a></li>
+               <li><a href="" target="_blank">Obesity </a></li> 
+               <li><a href="" target="_blank">Migraine </a></li> 
+               <li><a href="" target="_blank">Diabetes </a></li>
            </ul>
            </div>
            </div>
-       <div class="boxinner" id="23">
-           <div class="icon">
-           <img src="assets/img/i6.png" alt="Child Health" title="Child Health">
-           </div>
-           <div class="rightdesc">
-           <a href="">
-               <h3>Child Health</h3>
-           </a>
-           <ul>
-               <li><a href="">Asthma </a></li> 
-               <li><a href="">Bed wetting</a></li> 
-               <li><a href="">Childhood Asthma</a></li>
-           </ul>
-           </div>
-       </div>
-       
       
-       
-       
-       
+ 
 </div>
 </section>
 <section class="container-fluid doctr-sec3">
-    <div class="diseasesec col-md-12" style="margin-top: -70px;">
-        <div class="boxinner" id="22">
-            <div class="icon">
-            <img src="assets/img/i3.png" alt="Eye, ENT &amp; Oral" title="Eye, ENT &amp; Oral">
+    <div class="diseasesec col-md-12">
+        <div class="boxinner" id="23">
+            <div class="icon lift">
+            <img src="assets/img/i6.png" alt="Child Health" title="Child Health">
             </div>
             <div class="rightdesc">
-            <a href="">
-                <h3>Eye, ENT &amp; Oral</h3>
+            <a href="" target="_blank">
+                <h3>Child Health</h3>
             </a>
             <ul>
-                <li><a href="">Cataract</a></li> 
-                <li><a href="">Conjunctivitis</a></li> 
-                <li><a href="">Epistaxis</a></li> 
-                <li><a href="">Tonsillitis</a></li> 
-                <li><a href="">Stye</a></li> 
-                <li><a href="">Glaucoma</a></li> 
-                <li><a href="">Goitre </a></li> 
-                <li><a href="">Myopia</a></li> 
-                <li><a href="">Senile Deafness</a></li> 
-                <li><a href="">Halitosis</a></li> 
-                <li><a href="">Pyorrhoea</a></li>
+                <li><a href="" target="_blank">Asthma </a></li> 
+                <li><a href="" target="_blank">Bed wetting</a></li> 
+                <li><a href="" target="_blank">Childhood Asthma</a></li>
             </ul>
             </div>
         </div>
+        <div class="boxinner" id="22">
+            <div class="icon lift">
+            <img src="assets/img/i3.png" alt="Eye, ENT &amp; Oral" title="Eye, ENT &amp; Oral">
+            </div>
+            <div class="rightdesc">
+            <a href="" target="_blank">
+                <h3>Eye, ENT &amp; Oral</h3>
+            </a>
+            <ul>
+                <li><a href="" target="_blank">Cataract</a></li> 
+                <li><a href="" target="_blank">Conjunctivitis</a></li> 
+                <li><a href="" target="_blank">Epistaxis</a></li> 
+                <li><a href="" target="_blank">Tonsillitis</a></li> 
+                <li><a href="" target="_blank">Stye</a></li> 
+                <li><a href="" target="_blank">Glaucoma</a></li> 
+                <li><a href="" target="_blank">Goitre </a></li> 
+                <li><a href="" target="_blank">Myopia</a></li> 
+                <li><a href="" target="_blank">Senile Deafness</a></li> 
+                <li><a href="" target="_blank">Halitosis</a></li> 
+                <li><a href="" target="_blank">Pyorrhoea</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid doctr-sec3">
+    <div class="diseasesec col-md-12">
+       
         
         <div class="boxinner" id="20">
-            <div class="icon">
+            <div class="icon lift">
             <img src="assets/img/i3.png" alt="Oncology " title="Oncology ">
             </div>
             <div class="rightdesc">
-            <a href="">
+            <a href="" target="_blank">
                 <h3>Oncology </h3>
             </a>
             <ul>
-                <li><a href="">Cancer </a></li>
+                <li><a href="" target="_blank">Cancer </a></li>
             </ul>
             </div>
         </div>
 
         <div class="boxinner" id="9">
-            <div class="icon">
+            <div class="icon lift">
             <img src="assets/img/i7.png" alt="Sexual" title="Sexual">
             </div>
             <div class="rightdesc">
-            <a href="">
+            <a href="" target="_blank">
                 <h3>Sexual</h3>
             </a>
             <ul>
-                <li><a href="">AIDS  </a></li> <li><a href="">Erectile Dysfunction </a></li> <li><a href="">Frigidity  </a></li> <li><a href="">Oligospermia </a></li>
-                <li><a href="">Premature Ejaculation   </a></li><li><a href="">Syphilis</a></li>
+                <li><a href="" target="_blank">AIDS  </a></li> <li><a href="" target="_blank">Erectile Dysfunction </a></li> <li><a href="" target="_blank">Frigidity  </a></li> <li><a href="" target="_blank">Oligospermia </a></li>
+                <li><a href="" target="_blank">Premature Ejaculation   </a></li><li><a href="" target="_blank">Syphilis</a></li>
             </ul>
             </div>
         </div>
     </div>
 </section>
 <section class="container-fluid doctr-sec3">
-    <div class="diseasesec col-md-12" style="margin-top: -50px;">
-    <div class="boxinner" id="19">
-        <div class="icon">
-        <img src="assets/img/i4.png" alt="Urinary" title="Urinary">
-        </div>
-        <div class="rightdesc">
-        <a href="">
-            <h3>Urinary</h3>
-        </a>
-        <ul>
-            <li><a href="">Urinary Tract Infection (UTI) </a></li> <li><a href="">Kidney Stones </a></li> <li><a href="">Cystitis</a></li> <li><a href="">Prostatitis</a></li> <li><a href="">Renal Failure</a></li> <li><a href="">Urethritis</a></li>
-        </ul>
-        </div>
-    </div>
-    
-    
+    <div class="diseasesec col-md-12">
+   
     
     <div class="boxinner" id="13">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i8.png" alt="Neurological" title="Neurological">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Neurological</h3>
         </a>
         <ul>
-            <li><a href="">Chronic Fatigue Syndrome</a></li> <li><a href="">Fibromyalgia</a></li> <li><a href="">Multiple Sclerosis</a></li> <li><a href="">Parkinson's Disease</a></li> <li><a href="">Migraine </a></li> <li><a href="">Epilepsy</a></li> <li><a href="">Sciatica</a></li>
+            <li><a href="" target="_blank">Chronic Fatigue Syndrome</a></li> <li><a href="" target="_blank">Fibromyalgia</a></li> <li><a href="" target="_blank">Multiple Sclerosis</a></li> <li><a href="" target="_blank">Parkinson's Disease</a></li> <li><a href="" target="_blank">Migraine </a></li> <li><a href="" target="_blank">Epilepsy</a></li> <li><a href="" target="_blank">Sciatica</a></li>
         </ul>
         </div>
     </div>
     
     <div class="boxinner" id="8">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i3.png" alt="Cardio" title="Cardio">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Cardio</h3>
         </a>
         <ul>
-            <li><a href="">Hypertension </a></li> <li><a href="">High Cholesterol </a></li> <li><a href="">Angina pectoris</a></li> <li><a href="">Ischaemic Heart Disease</a></li>
+            <li><a href="" target="_blank">Hypertension </a></li> <li><a href="" target="_blank">High Cholesterol </a></li> <li><a href="" target="_blank">Angina pectoris</a></li> <li><a href="" target="_blank">Ischaemic Heart Disease</a></li>
         </ul>
         </div>
     </div>
 </div>
 </section>
 <section class="container-fluid doctr-sec3">
-    <div class="diseasesec col-md-12" style="margin-top: -50px;">
+    <div class="diseasesec col-md-12">
     <div class="boxinner" id="19">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i8.png" alt="Psychological" title="Psychological">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Psychological</h3>
         </a>
         <ul>
-            <li><a href="">Anxiety Disorder  </a></li> <li><a href="">Anxiety Disorder </a></li> <li><a href="">Depression  </a></li> <li><a href="">Insomnia </a></li> <li><a href="">Bed wetting </a></li> <li><a href="">Bipolar Disorder </a></li>
-            <li><a href="">Psychosis</a></li> <li><a href="">Schizophrenia</a></li>
+            <li><a href="" target="_blank">Anxiety Disorder  </a></li> <li><a href="" target="_blank">Anxiety Disorder </a></li> <li><a href="" target="_blank">Depression  </a></li> <li><a href="" target="_blank">Insomnia </a></li> <li><a href="" target="_blank">Bed wetting </a></li> <li><a href="" target="_blank">Bipolar Disorder </a></li>
+            <li><a href="" target="_blank">Psychosis</a></li> <li><a href="" target="_blank">Schizophrenia</a></li>
         </ul>
         </div>
     </div>
     
-    
-    
     <div class="boxinner" id="13">
-        <div class="icon">
+        <div class="icon lift">
         <img src="assets/img/i8.png" alt="Liver & Gall " title="Liver & Gall ">
         </div>
         <div class="rightdesc">
-        <a href="">
+        <a href="" target="_blank">
             <h3>Liver & Gall </h3>
         </a>
         <ul>
-            <li><a href="">Gallstone </a></li> <li><a href="">Jaundice</a></li> <li><a href="">Liver Cirrhosis </a></li> <li><a href="">Fatty Liver </a></li>
+            <li><a href="" target="_blank">Gallstone </a></li> <li><a href="" target="_blank">Jaundice</a></li> <li><a href="" target="_blank">Liver Cirrhosis </a></li> <li><a href="" target="_blank">Fatty Liver </a></li>
         </ul>
         </div>
     </div>
     
 </div>
+</section>
+<section class="container-fluid doctr-sec3">
+    <div class="diseasesec col-md-12">
+        <div class="boxinner" id="19">
+            <div class="icon lift">
+            <img src="assets/img/i4.png" alt="Urinary" title="Urinary">
+            </div>
+            <div class="rightdesc">
+            <a href="" target="_blank">
+                <h3>Urinary</h3>
+            </a>
+            <ul>
+                <li><a href="" target="_blank">Urinary Tract Infection (UTI) </a></li> <li><a href="" target="_blank">Kidney Stones </a></li> <li><a href="" target="_blank">Cystitis</a></li> <li><a href="" target="_blank">Prostatitis</a></li> <li><a href="" target="_blank">Renal Failure</a></li> <li><a href="" target="_blank">Urethritis</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="">
     <footer class="container-fluid ">
@@ -507,6 +572,7 @@
            </div>	
         </footer>
     </section>
+    </div>
 </div>
 </body>
 </html>

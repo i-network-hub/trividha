@@ -52,8 +52,24 @@
   #fp-nav{
 	  display: none;
   }
-  
-  
+  .camp-section{
+      padding-top: 150px !important;
+  }
+  @media (max-width: 990px) {
+  .camp-section h1,
+  p {
+    margin-top: 20px !important;
+    text-align: center;
+  }
+  .camp-img-gallery,
+  .camp-img-gallery-2 {
+    margin-left: -40px;
+  }
+  .camp-img-gallery-2 img {
+    width: 300px;
+    height: 200px;
+  }
+}
   </style>
 </head>
 
@@ -61,126 +77,142 @@
 <body >
 
 
+
+
+
 <div class="wrapper">
+    <div class="icon-bar">
+   
+        <a href="#" class="twitter lift"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="twitter lift"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+        
+        
+       
+        <a href="#" class="linkedin lift"><i class="fa fa-linkedin"></i></a>  
+        <a href="#" class="facebook lift"><i class="fa fa-facebook"></i></a>
+        
+   </div> 
 
-			<section class="container-fluid bnr-di " style="padding-left:0; padding-right:0;">
-			
-				<div id="flipkart-navbar" class=" top-fix">
+   <div id="main">
 
-					<div class="container-fluid" >
-						
-						<div class="container" >
-						
-							<div class="row row2">
-								<div class="col-sm-4">
-									<h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ 
-										<a href="index.html"><img src="images/Logo.png" class="img-responsive ig" style="margin:auto; display:block;"/> </a></span>
-									<div class="col-md-2 col-sm-5 col-xs-5 nopadding">
-										<img src="images/img1.png" class="img-responsive ig1"/>
-									</div>
-										
-									<div class="col-md-10 col-sm-7 col-xs-7 nopadding">
-										<p class="mbl-txt"> <a href="tel: +91 9499-38-38-38"> +91 9499-38-38-38</a></p>
-									</div>
-								</div>
-			
-								<div class="flipkart-navbar-search smallsearch col-sm-4 col-xs-11">
-									<div class="row">
-										<a href="index.html">
-											<img src="images/Logo.png" class="img-responsive ig2" style="margin:auto; display:block;"/>
-										</a>
-									</div>
-								</div>
-								<div class="cart largenav col-sm-4">
-									<div class="col-md-4 col-sm-4 col-xs-4 nopadding">
-								</div>
-									<div class="col-md-4 col-sm-4 col-xs-4 nopadding">
-										<a href="cart.html">
-											<img src="images/rigt-icon1.png" class="img-responsive ig3" style="float:right;"/>
-										</a>
-									</div>
-									<div class="col-md-4 col-sm-4 col-xs-4 nopadding">
-									<a href="log-in.html">
-											<img src="images/rigt-icon2.png" class="img-responsive ig3" style="float:left;"/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						
-						<div class="row row1 mg-back" >
-							 <ul class="largenav ">
-                        <li class="upper-links">
-                            <a class="links dropbtn" href="raw-herbs.html">Raw Herb</a>
-                            
-                        </li>
+    <section class="container-fluid header nopadding vertical-scrolling b-img" >
+    <div id="flipkart-navbar" class=" top-fix">
+    
+    <div class="container-fluid" >
+    
+    <div class="container" >
+    
+    <div class="row row2">
+      <div class="col-sm-4">
+          <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ 
+              <a href="index.html"><img src="images/Logo.png" class="img-responsive ig" style="margin:auto; display:block;"/> </a></span>
+          
+              <div class="col-md-2 col-sm-5 col-xs-5 part-two nopadding">
+              <img src="images/img1.png" class="img-responsive ig1 lift"/>
+              </div>
+              
+          <div class="col-md-10 col-sm-7 col-xs-7 nopadding">
+              <p class="mbl-txt"> <a href="tel: +91 9499-38-38-38"> +91 9499-38-38-38</a></p>
+          </div>
+      </div>
+    
+      <div class="flipkart-navbar-search smallsearch col-sm-4 col-xs-11">
+          <div class="row">
+              <a href="index.html">
+                  <img src="images/Logo.png" class="img-responsive ig2" style="margin:auto; display:block;"/>
+              </a>
+          </div>
+      </div>
+      <div class="cart largenav col-sm-4">
+          <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+      </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+              <a href="cart.html" target="_blank">
+                  <img src="images/rigt-icon1.png" class="img-responsive ig3 lift " style="float:right;"/>
+              </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 nopadding">
+          <a href="log-in.html" target="_blank">
+                  <img src="images/rigt-icon2.png" class="img-responsive ig3 lift " style="float:left;"/>
+              </a>
+          </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="row row1 mg-back" >
+    <ul class="largenav ">
+          <li class="upper-links">
+              <a class="links dropbtn" href="raw-herbs.html" target="_blank">Raw Herb</a>
+              
+          </li>
+    
+          <li class="upper-links dropdown">
+              <a class="links dropbtn" href="doctor.html" target="_blank">Treatments</a>
+              <div class="dropdown-content">
+                  <a class="link" href="doctor.html">Digestive</a>
+                  <a class="link" href="doctor.html">Endocrine</a>
+                  <a class="link" href="doctor.html">Hair &amp; Skin</a>
+                  <a class="link" href="doctor.html">Urinary</a>
+                  <a class="link" href="doctor.html">Joint Pain</a>
+                  <a class="link" href="doctor.html">Respiratory</a>
+                  <a class="link" href="doctor.html">Gyane</a>
+                  <a class="link" href="doctor.html">Brain</a>
+                </div></li>
+                <li class="upper-links">
+                  <a class="links dropbtn" href="diet.html" target="_blank">Diet Planner</a>
+                  
+              </li><li class="upper-links">
+                  <a class="links dropbtn" href="nutritionals-consultants.html" target="_blank">Consultation</a>
+                  
+              </li><li class="upper-links">
+                  <a class="links dropbtn" href="social-cause.html" target="_blank">Social Cause</a>
+                  
+              </li>
+          <li class="upper-links dropdown"> 
+              <a class="links dropbtn" href="products.html" target="_blank">Products</a>
+              <div class="dropdown-content">
+                  <a class="link" href="ayurveda.html" target="_blank">Ayurveda</a>
+                  <a class="link" href="nutraceuticals.html" target="_blank">Nutraceuticals</a>
+                </div>
+          </li>
+    
+          <li class="upper-links dropdown">
+              <a class="links dropbtn" href="">Blogs</a>
+              <div class="dropdown-content">
+                  <a class="link" href="blog.html" target="_blank">Blog</a>
+                  <a class="link" href="article.html" target="_blank">Article</a>
+                </div>
+          </li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #000;  padding-top: 2px;">
+    <span class="sidenav-heading">
+    <a href="index.html">
+    <img src="images/Logo.png"></span>
+    </a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="raw-herbs.html">Raw herb </a>
+    <a href="doctor.html">Treatments </a>
+    <a href="diet.html">Diet Planner</a>
+    <a href="doctor.html">Consultation</a>
+    <a href="social-cause.html">Social Cause</a>
+    <a href="products.html">Products </a>
+    <a href="blog.html">Blog </a>
+    </div>
 
-                        <li class="upper-links dropdown">
-                            <a class="links dropbtn" href="doctor.html">Treatments</a>
-                            <div class="dropdown-content">
-                                <a class="link" href="doctor.html">Digestive</a>
-                                <a class="link" href="doctor.html">Endocrine</a>
-                                <a class="link" href="doctor.html">Hair &amp; Skin</a>
-                                <a class="link" href="doctor.html">Urinary</a>
-                                <a class="link" href="doctor.html">Joint Pain</a>
-                                <a class="link" href="doctor.html">Respiratory</a>
-                                <a class="link" href="doctor.html">Gyane</a>
-                                <a class="link" href="doctor.html">Brain</a>
-                              </div></li>
-                              <li class="upper-links">
-                                <a class="links dropbtn" href="diet.html">Diet Planner</a>
-                                
-                            </li><li class="upper-links">
-                                <a class="links dropbtn" href="nutritionals-consultants.html">Consultation</a>
-                                
-                            </li><li class="upper-links">
-                                <a class="links dropbtn" href="social-cause.html">Social Cause</a>
-                                
-                            </li>
-                        <li class="upper-links dropdown">
-                            <a class="links dropbtn" href="products.html">Products</a>
-                            <div class="dropdown-content">
-                                <a class="link" href="ayurveda.html">Ayurveda</a>
-                                <a class="link" href="nutraceuticals.html">Nutraceuticals</a>
-                              </div>
-                        </li>
-
-                        <li class="upper-links dropdown">
-                            <a class="links dropbtn" href="">Blogs</a>
-                            <div class="dropdown-content">
-                                <a class="link" href="blog.html">Blog</a>
-                                <a class="link" href="article.html">Article</a>
-                              </div>
-                        </li>
-                    </ul>
-						</div>
-					</div>
-				</div>
-			
-			<div id="mySidenav" class="sidenav">
-				<div class="container" style="background-color: #000;  padding-top: 2px;">
-					<span class="sidenav-heading">
-						<a href="index.html">
-							<img src="images/Logo.png"></span>
-						</a>
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-				</div>
-				<a href="raw-herbs.html">Raw herb </a>
-				<a href="doctor.html">Treatments </a>
-				<a href="diet.html">Diet Planner</a>
-				<a href="doctor.html">Consultation</a>
-				<a href="social-cause.html">Social Cause</a>
-				<a href="products.html">Products </a>
-				<a href="blog.html">Blog </a>
-			</div>
-
-				<div class="container-fluid abt-new">
+				<div class="container-fluid abt-new section-divide">
 					
 					<div class="col-md-12 colsm-12 col-xs-12">
 						<h1 class="heading" style="padding-top: 0px; padding-bottom: 20px;">Overview</h1>
 						
-							<p style="margin-top: -50px;">
+							<p>
 							
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <br><br>
 	
@@ -246,8 +278,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				
 			</section>
 			
-			
-				<section class="container-fluid doctr-sec3">
+            <section class="container-fluid doctr-sec3">
 				<div class="container">
 					<div class="row">
 					<div class="col-md-1 col-sm-12 colxs-12">
@@ -263,7 +294,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 							
 							</p>
-							
+							<h1 class="text-left" style="font-size:22px;">Below is our image gallery of the Camp </h1>
 					
 						</div>
 						
@@ -273,7 +304,47 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 					</div>
 				</div>
             </section>
-
+			
+            <section class="container-fluid doctr-sec3 camp-section">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-1 col-sm-12 colxs-12">
+                    </div>
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <div class="container-fluid">
+                                  <div class="camp-img-gallery  ">
+                                    <div class=" col-md-12">
+                                        <div class="col-md-4">
+                                            <img src="assets/img/3.png" alt="">
+                                        </div>
+                                        <div class="col-md-4">
+                                           <img src="assets/img/1.png" alt="">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="assets/img/2.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="camp-img-gallery-2  ">
+                                    <div class=" col-md-12">
+                                        <div class="col-md-6">
+                                            <img src="assets/img/3.png" alt=""> 
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="assets/img/4.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                        </div>
+                        
+                        <div class="col-md-1 col-sm-12 colxs-12">
+                    </div>
+                        
+                    </div>
+                </div>
+            </section>
 			
 				<!-------- footer section		-----	 -->
 				
@@ -363,7 +434,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				
 		
 </div>	
- 
+ </div>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/tilt.jquery.js"></script>
 
